@@ -1,11 +1,11 @@
   node {
-    stages ("Cloning the repositery") {
+    stage ("Cloning the repositery") {
          git branch: 'main', url: 'https://github.com/rajugajjela/git1.git' 
     }
-    stages ('run the sample script') {
+    stage ('run the sample script') {
         sh './simple.sh'
     }
-    stages ('Execute echo command') {
+    stage ('Execute echo command') {
         echo "First scripted pipeline script"
     }
     
