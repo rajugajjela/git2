@@ -1,6 +1,6 @@
   node {
     stages ("Cloning the repositery") {
-         git branch: 'master', url: 'https://github.com/rajugajjela/git1.git' 
+         git branch: 'main', url: 'https://github.com/rajugajjela/git1.git' 
     }
     stages ('run the sample script') {
         sh './simple.sh'
